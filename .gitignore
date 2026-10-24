@@ -1,0 +1,5 @@
+*.dt
+*.bak
+*.tmp
+*.log
+.vs/
