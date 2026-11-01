@@ -26,7 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиТоваров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Обороты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОборотыПоТоварам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ce19c526-d13e-4f3b-ab6d-05eeb693327f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ad26a5af-fae4-41c3-9dbe-ca4fa7aab3d8</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
