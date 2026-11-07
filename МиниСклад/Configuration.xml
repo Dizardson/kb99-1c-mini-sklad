@@ -252,6 +252,7 @@
 			<Language>Русский</Language>
 			<Subsystem>МиниСклад</Subsystem>
 			<CommonModule>РаботаСТаблицами</CommonModule>
+			<CommonModule>FIFOПересчетСервер</CommonModule>
 			<Catalog>Товары</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Document>Поступление</Document>
