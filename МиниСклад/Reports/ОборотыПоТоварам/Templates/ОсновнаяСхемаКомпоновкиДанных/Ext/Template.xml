@@ -14,46 +14,40 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоПриход</dataPath>
-			<field>КоличествоПриход</field>
+			<dataPath>СуммаОборот</dataPath>
+			<field>СуммаОборот</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПриход</dataPath>
-			<field>СуммаПриход</field>
+			<dataPath>ВидыОперации</dataPath>
+			<field>ВидыОперации</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоРасход</dataPath>
-			<field>КоличествоРасход</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаРасход</dataPath>
-			<field>СуммаРасход</field>
+			<dataPath>КоличествоОборот</dataPath>
+			<field>КоличествоОборот</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ОстаткиТоваровОбороты.Товары КАК Товары,
-	ОстаткиТоваровОбороты.КоличествоПриход КАК КоличествоПриход,
-	ОстаткиТоваровОбороты.КоличествоРасход КАК КоличествоРасход,
-	ОстаткиТоваровОбороты.СуммаПриход КАК СуммаПриход,
-	ОстаткиТоваровОбороты.СуммаРасход КАК СуммаРасход
+	ОборотыОбороты.Товары КАК Товары,
+	ОборотыОбороты.ВидыОперации КАК ВидыОперации,
+	СУММА(ОборотыОбороты.КоличествоОборот) КАК КоличествоОборот,
+	СУММА(ОборотыОбороты.СуммаОборот) КАК СуммаОборот
 ИЗ
-	РегистрНакопления.ОстаткиТоваров.Обороты КАК ОстаткиТоваровОбороты</query>
+	РегистрНакопления.Обороты.Обороты КАК ОборотыОбороты
+
+СГРУППИРОВАТЬ ПО
+	ОборотыОбороты.ВидыОперации,
+	ОборотыОбороты.Товары</query>
 	</dataSet>
 	<totalField>
-		<dataPath>КоличествоПриход</dataPath>
-		<expression>Сумма(КоличествоПриход)</expression>
+		<dataPath>КоличествоОборот</dataPath>
+		<expression>Сумма(КоличествоОборот)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>КоличествоРасход</dataPath>
-		<expression>Сумма(КоличествоРасход)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаПриход</dataPath>
-		<expression>Сумма(СуммаПриход)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаРасход</dataPath>
-		<expression>Сумма(СуммаРасход)</expression>
+		<dataPath>СуммаОборот</dataPath>
+		<expression>Сумма(СуммаОборот)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -96,19 +90,10 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Товары</dcsset:field>
+					<dcsset:field>КоличествоОборот</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>КоличествоПриход</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>КоличествоРасход</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаПриход</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаРасход</dcsset:field>
+					<dcsset:field>СуммаОборот</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -143,6 +128,23 @@
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВидыОперации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>

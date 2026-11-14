@@ -63,7 +63,7 @@
 			<DefaultObjectForm/>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
-			<DefaultChoiceForm/>
+			<DefaultChoiceForm>Catalog.Контрагенты.Form.ФормаВыбораКонтрагента</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -91,6 +91,8 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаВыбораКонтрагента</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

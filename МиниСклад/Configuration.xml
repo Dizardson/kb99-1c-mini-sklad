@@ -257,6 +257,7 @@
 			<Catalog>Контрагенты</Catalog>
 			<Document>Поступление</Document>
 			<Document>Реализация</Document>
+			<Enum>ВидыОперации</Enum>
 			<Report>ОборотыПоТоварам</Report>
 			<AccumulationRegister>ОстаткиТоваров</AccumulationRegister>
 			<AccumulationRegister>Обороты</AccumulationRegister>
