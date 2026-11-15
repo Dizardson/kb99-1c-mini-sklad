@@ -62,8 +62,8 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm/>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.Товары.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm>Catalog.Товары.Form.ФормаВыбораТовара</DefaultChoiceForm>
+			<DefaultListForm/>
+			<DefaultChoiceForm>Catalog.Товары.Form.ФормаПодбораТовара</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -92,8 +92,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаВыбораТовара</Form>
+			<Form>ФормаПодбораТовара</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
