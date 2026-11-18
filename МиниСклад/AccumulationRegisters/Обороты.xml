@@ -183,7 +183,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ВидыОперации</v8:Type>
+						<v8:Type>cfg:EnumRef.ВидыОпераций</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

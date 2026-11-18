@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
-	<Events>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -71,31 +68,28 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
+				<LabelField name="Код" id="19">
+					<DataPath>Список.Код</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+				</LabelField>
 				<LabelField name="Наименование" id="16">
 					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<LabelField name="Код" id="19">
-					<DataPath>Список.Код</DataPath>
-					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
-				</LabelField>
-				<InputField name="ОстатокТовара" id="22">
+				<LabelField name="КоличествоОстаток" id="22">
 					<DataPath>Список.КоличествоОстаток</DataPath>
-					<Enabled>false</Enabled>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Остаток товара</v8:content>
+							<v8:content>Остаток товара на складе</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<AutoMarkIncomplete>false</AutoMarkIncomplete>
-					<ContextMenu name="ОстатокТовараКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ОстатокТовараРасширеннаяПодсказка" id="24"/>
-				</InputField>
+					<ContextMenu name="КоличествоОстатокКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КоличествоОстатокРасширеннаяПодсказка" id="24"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -109,32 +103,33 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	СправочникТовары.Ссылка КАК Ссылка,
-	СправочникТовары.ПометкаУдаления КАК ПометкаУдаления,
 	СправочникТовары.Код КАК Код,
 	СправочникТовары.Наименование КАК Наименование,
-	СправочникТовары.Предопределенный КАК Предопределенный,
-	СправочникТовары.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ОстаткиТоваровОстатки.Товары КАК Товары,
 	ОстаткиТоваровОстатки.КоличествоОстаток КАК КоличествоОстаток
 ИЗ
-	РегистрНакопления.ОстаткиТоваров.Остатки КАК ОстаткиТоваровОстатки
-		ПОЛНОЕ СОЕДИНЕНИЕ Справочник.Товары КАК СправочникТовары
-		ПО ОстаткиТоваровОстатки.Товары = СправочникТовары.Ссылка</QueryText>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
-				</Field>
+	Справочник.Товары КАК СправочникТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ОстаткиТоваров.Остатки КАК ОстаткиТоваровОстатки
+		ПО СправочникТовары.Ссылка = ОстаткиТоваровОстатки.Товары</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Код</dcssch:dataPath>
 					<dcssch:field>Код</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Наименование</dcssch:dataPath>
 					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Партия</dcssch:dataPath>
+					<dcssch:field>Партия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоОстаток</dcssch:dataPath>
+					<dcssch:field>КоличествоОстаток</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Товары</dcssch:dataPath>
+					<dcssch:field>Товары</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
@@ -145,16 +140,12 @@
 					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Товары</dcssch:dataPath>
-					<dcssch:field>Товары</dcssch:field>
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Партия</dcssch:dataPath>
-					<dcssch:field>Партия</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КоличествоОстаток</dcssch:dataPath>
-					<dcssch:field>КоличествоОстаток</dcssch:field>
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
@@ -214,7 +205,12 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">Отсутствует</dcscor:value>
+									<dcscor:value xsi:type="v8:LocalStringType">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отсутствует</v8:content>
+										</v8:item>
+									</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>

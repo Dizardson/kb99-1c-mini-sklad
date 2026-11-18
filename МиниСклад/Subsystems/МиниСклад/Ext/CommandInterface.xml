@@ -4,6 +4,7 @@
 		<Command name="AccumulationRegister.ОстаткиТоваров.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Гость">false</xr:Value>
 			</Visibility>
 		</Command>
 		<Command name="AccumulationRegister.Обороты.StandardCommand.OpenList">

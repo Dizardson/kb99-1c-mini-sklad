@@ -251,13 +251,20 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>МиниСклад</Subsystem>
-			<CommonModule>РаботаСТаблицами</CommonModule>
+			<Role>Администратор</Role>
+			<Role>Менеджер</Role>
+			<Role>Кладовщик</Role>
+			<Role>Гость</Role>
+			<CommonModule>РаботаСТабличнымиЧастямиКлиент</CommonModule>
 			<CommonModule>FIFOПересчетСервер</CommonModule>
+			<CommonModule>УправлениеПолнотекстовымПоиском</CommonModule>
+			<ScheduledJob>ОбновлениеИндекса</ScheduledJob>
+			<ScheduledJob>СлияниеИндексов</ScheduledJob>
 			<Catalog>Товары</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Document>Поступление</Document>
 			<Document>Реализация</Document>
-			<Enum>ВидыОперации</Enum>
+			<Enum>ВидыОпераций</Enum>
 			<Report>ОборотыПоТоварам</Report>
 			<AccumulationRegister>ОстаткиТоваров</AccumulationRegister>
 			<AccumulationRegister>Обороты</AccumulationRegister>
