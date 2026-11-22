@@ -11,6 +11,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+	</Events>
 	<ChildItems>
 		<LabelField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>

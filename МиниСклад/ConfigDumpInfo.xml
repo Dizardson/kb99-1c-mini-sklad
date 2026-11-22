@@ -24,8 +24,8 @@
 			<Metadata name="Catalog.ПользователиИБ.Attribute.УникальныйИдентификаторПользователя" id="8b5f33d3-818e-4869-a4cc-fad8e5bfa371"/>
 			<Metadata name="Catalog.ПользователиИБ.Attribute.СтатусСинхронизации" id="e67c6c56-e4fe-4c75-9eaa-8b8364fb8118"/>
 		</Metadata>
-		<Metadata name="Catalog.ПользователиИБ.Form.ФормаЭлемента" id="1ed439b3-b4ff-4894-9de6-fe845f52461e" configVersion="b130274e46b5d941bbf7acd28798620800000000"/>
-		<Metadata name="Catalog.ПользователиИБ.Form.ФормаЭлемента.Form" id="1ed439b3-b4ff-4894-9de6-fe845f52461e.0" configVersion="e6456c60104aa6459f361fcf5538b95100000000"/>
+		<Metadata name="Catalog.ПользователиИБ.Form.ФормаЭлемента" id="1ed439b3-b4ff-4894-9de6-fe845f52461e" configVersion="3c9dd14ef5a0bc4eb1cbf94df4ae6a3600000000"/>
+		<Metadata name="Catalog.ПользователиИБ.Form.ФормаЭлемента.Form" id="1ed439b3-b4ff-4894-9de6-fe845f52461e.0" configVersion="ef69a79ee1146d4b9af8f1bb7ae2fc6200000000"/>
 		<Metadata name="Catalog.Склады" id="df1a778e-a830-4d72-a29a-e5de60db7c89" configVersion="d3a713c4a0aa654a8bd1418a6fb2152600000000"/>
 		<Metadata name="Catalog.Товары" id="41702005-2ca9-4119-983b-2104346ee18d" configVersion="3660bb5ff5abca42b1f3496cd112b1dd00000000"/>
 		<Metadata name="Catalog.Товары.Form.ФормаПодбораТовара" id="719630c2-7ca7-4c3d-9efa-7b76d01c9333" configVersion="04e4557a2dad1343a7e9cfa72041826500000000"/>
@@ -94,8 +94,8 @@
 		<Metadata name="Role.Кладовщик.Rights" id="3d0ce7ab-d5c6-4d1c-a883-873ed8fd8a96.0" configVersion="de189815f358da4193ebcdb93381244400000000"/>
 		<Metadata name="Role.Менеджер" id="c1b0c5eb-b2f6-4493-b124-35169f6e7dd8" configVersion="c2dc0a23d90c994197920db58ccad2ce00000000"/>
 		<Metadata name="Role.Менеджер.Rights" id="c1b0c5eb-b2f6-4493-b124-35169f6e7dd8.0" configVersion="2e8282fd38ea1249a2436b9e0120f3bd00000000"/>
-		<Metadata name="ScheduledJob.СинхронизацияПользователей" id="b1018c3a-3ce9-4166-8503-1f4cca91aa39" configVersion="bf16375c2c8c7444b5f7f6833e4d427900000000"/>
-		<Metadata name="ScheduledJob.СинхронизацияПользователей.Schedule" id="b1018c3a-3ce9-4166-8503-1f4cca91aa39.0" configVersion="09f5bbfe944b1541b3313a7c4472019200000000"/>
+		<Metadata name="ScheduledJob.СинхронизацияПользователей" id="b1018c3a-3ce9-4166-8503-1f4cca91aa39" configVersion="5892a58e8343dc4ca07f46c38ed7d8c800000000"/>
+		<Metadata name="ScheduledJob.СинхронизацияПользователей.Schedule" id="b1018c3a-3ce9-4166-8503-1f4cca91aa39.0" configVersion="11932747e27a1743830fadd31feaf57700000000"/>
 		<Metadata name="SessionParameter.ТекущийСотрудник" id="5ce30c07-e20d-48ab-8060-5cc981f54f96" configVersion="580f5b568e40d24b9c8a85b3ccfa4c6400000000"/>
 		<Metadata name="Subsystem.МиниСклад" id="4e250f35-42cb-4b71-b50b-f13680e7f2a3" configVersion="57bad29bfd003b4e98127a1a441d604f00000000"/>
 		<Metadata name="Subsystem.МиниСклад.CommandInterface" id="4e250f35-42cb-4b71-b50b-f13680e7f2a3.1" configVersion="672a233e0a14f24da884c69af77c60fa00000000"/>
