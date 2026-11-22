@@ -2,7 +2,7 @@
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.20">
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
-	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
 		<name>Document.Поступление.TabularSection.Товары.Attribute.Количество</name>
 		<right>
@@ -137,14 +137,32 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Реализация ИЗ Документ.Реализация КАК Реализация
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Реализация.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Реализация ИЗ Документ.Реализация КАК Реализация
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Реализация.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Реализация ИЗ Документ.Реализация КАК Реализация
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Реализация.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Posting</name>
@@ -272,6 +290,12 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Обороты ИЗ РегистрНакопления.Обороты КАК Обороты
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+	ПО Обороты.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
@@ -283,6 +307,12 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>ОстаткиТоваров ИЗ РегистрНакопления.ОстаткиТоваров КАК ОстаткиТоваров
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+	ПО ОстаткиТоваров.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
@@ -301,6 +331,12 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Поступление ИЗ Документ.Поступление КАК Поступление
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Поступление.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
@@ -344,6 +380,21 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
 		</right>
 	</object>
 </Rights>

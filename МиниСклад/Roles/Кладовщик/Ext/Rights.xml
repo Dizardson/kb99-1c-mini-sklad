@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.20">
-	<setForNewObjects>false</setForNewObjects>
+	<setForNewObjects>true</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
-	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
 		<name>Document.Реализация.TabularSection.Товары.Attribute.Товар</name>
 		<right>
@@ -32,51 +32,302 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Товары</name>
+		<name>Catalog.ПользователиИБ</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>false</value>
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.Обороты.Resource.Количество</name>
-		<right>
-			<name>View</name>
+			<name>InteractiveInsert</name>
 			<value>false</value>
 		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
-		<name>Subsystem.МиниСклад</name>
+		<name>Document.Реализация.Command.Печать</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Товары</name>
+		<right>
+			<name>Insert</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.Обороты.Resource.Количество</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Контрагенты</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
+			<name>Insert</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>Update</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InputByString</name>
-			<value>true</value>
+			<name>Delete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -87,18 +338,182 @@
 		</right>
 	</object>
 	<object>
+		<name>SessionParameter.ТекущийСотрудник</name>
+		<right>
+			<name>Get</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Set</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрНазначенийСкладов</name>
+		<right>
+			<name>Read</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.Реализация</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Реализация ИЗ Документ.Реализация КАК Реализация
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+	ПО Реализация.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>Insert</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InputByString</name>
-			<value>true</value>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -139,10 +554,6 @@
 	<object>
 		<name>AccumulationRegister.Обороты.Dimension.ВидыОперации</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -150,67 +561,100 @@
 	<object>
 		<name>Configuration.МиниСклад</name>
 		<right>
-			<name>ThinClient</name>
-			<value>true</value>
+			<name>Administration</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>WebClient</name>
-			<value>true</value>
+			<name>DataAdministration</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MobileClient</name>
-			<value>true</value>
+			<name>UpdateDataBaseConfiguration</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
+			<name>ExclusiveMode</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
+			<name>ActiveUsers</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
+			<name>EventLog</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
+			<name>ThickClient</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
+			<name>ExternalConnection</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>AnalyticsSystemClient</name>
-			<value>true</value>
+			<name>Automation</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>SaveUserData</name>
-			<value>true</value>
+			<name>TechnicalSpecialistMode</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>Output</name>
-			<value>true</value>
+			<name>CollaborationSystemInfoBaseRegistration</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ExclusiveModeTerminationAtSessionStart</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ConfigurationExtensionsAdministration</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveOpenExtDataProcessors</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveOpenExtReports</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>AccumulationRegister.Обороты.Resource.Сумма</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.Обороты.StandardAttribute.Active</name>
+		<name>AccumulationRegister.Обороты</name>
 		<right>
-			<name>View</name>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>Обороты ИЗ РегистрНакопления.Обороты КАК Обороты
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Обороты.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.Обороты.StandardAttribute.Active</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -219,10 +663,6 @@
 	<object>
 		<name>AccumulationRegister.Обороты.StandardAttribute.LineNumber</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -230,20 +670,12 @@
 	<object>
 		<name>AccumulationRegister.Обороты.StandardAttribute.Recorder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>AccumulationRegister.Обороты.StandardAttribute.Period</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -254,10 +686,24 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>ОстаткиТоваров ИЗ РегистрНакопления.ОстаткиТоваров КАК ОстаткиТоваров
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО ОстаткиТоваров.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -270,10 +716,6 @@
 	<object>
 		<name>AccumulationRegister.Обороты.Dimension.Товары</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -283,62 +725,171 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Поступление ИЗ Документ.Поступление КАК Поступление
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+	ПО Поступление.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Поступление ИЗ Документ.Поступление КАК Поступление
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Поступление.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>Поступление ИЗ Документ.Поступление КАК Поступление
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РегистрНазначенийСкладов КАК РегистрНазначенийСкладов
+    ПО Поступление.Склад = РегистрНазначенийСкладов.Склад
+ГДЕ РегистрНазначенийСкладов.Сотрудник = &amp;ТекущийСотрудник</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
-			<name>Posting</name>
-			<value>true</value>
+			<name>Delete</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>UndoPosting</name>
-			<value>true</value>
+			<name>InteractiveDelete</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады</name>
+		<right>
+			<name>Insert</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>false</value>
 		</right>
 		<right>
 			<name>InteractiveInsert</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
 		</right>
 		<right>
 			<name>InteractiveSetDeletionMark</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InteractivePosting</name>
-			<value>true</value>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InteractivePostingRegular</name>
-			<value>true</value>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InteractiveUndoPosting</name>
-			<value>true</value>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InteractiveChangeOfPosted</name>
-			<value>true</value>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InputByString</name>
-			<value>true</value>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>false</value>
 		</right>
 	</object>
 </Rights>

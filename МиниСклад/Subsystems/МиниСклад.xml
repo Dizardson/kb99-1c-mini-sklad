@@ -27,6 +27,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Обороты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОборотыПоТоварам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПользователиИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрНазначенийСкладов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыСинхронизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ea5db00a-c57a-4020-81f6-349b8065a644</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

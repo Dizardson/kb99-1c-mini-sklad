@@ -251,21 +251,25 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>МиниСклад</Subsystem>
+			<SessionParameter>ТекущийСотрудник</SessionParameter>
 			<Role>Администратор</Role>
 			<Role>Менеджер</Role>
 			<Role>Кладовщик</Role>
 			<Role>Гость</Role>
 			<CommonModule>РаботаСТабличнымиЧастямиКлиент</CommonModule>
 			<CommonModule>FIFOПересчетСервер</CommonModule>
-			<CommonModule>УправлениеПолнотекстовымПоиском</CommonModule>
-			<ScheduledJob>ОбновлениеИндекса</ScheduledJob>
-			<ScheduledJob>СлияниеИндексов</ScheduledJob>
+			<CommonModule>СинхронизацияПользователейИБ</CommonModule>
+			<ScheduledJob>СинхронизацияПользователей</ScheduledJob>
 			<Catalog>Товары</Catalog>
 			<Catalog>Контрагенты</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>ПользователиИБ</Catalog>
 			<Document>Поступление</Document>
 			<Document>Реализация</Document>
 			<Enum>ВидыОпераций</Enum>
+			<Enum>СтатусыСинхронизации</Enum>
 			<Report>ОборотыПоТоварам</Report>
+			<InformationRegister>РегистрНазначенийСкладов</InformationRegister>
 			<AccumulationRegister>ОстаткиТоваров</AccumulationRegister>
 			<AccumulationRegister>Обороты</AccumulationRegister>
 		</ChildObjects>
